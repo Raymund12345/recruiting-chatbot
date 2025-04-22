@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecruitingBot</title>
+    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      #webchat {
+        width: 100vw;
+        height: 100vh;
+      }
+      .bpFab {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="webchat"></div>
+    <script>
+      window.botpress.init({
+        botId: "a8d1a40a-7d1a-4bfe-9881-b840aadf5e4b",
+        clientId: "b5f99bd5-f2d7-44c9-a99e-85aae72f3628",
+        selector: "#webchat"
+      });
+
+      window.botpress.on("webchat:ready", () => {
+        window.botpress.sendEvent({
+          type: "visit",
+          channel: "web"
+        });
+        window.botpress.open();
+      });
+    </script>
+  </body>
+</html>
