@@ -1,43 +1,59 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RecruitingBot</title>
-    <script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"></script>
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-      }
-      #webchat {
-        width: 100vw;
-        height: 100vh;
-      }
-      .bpFab {
-        display: none !important;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="webchat"></div>
-    <script>
-      window.botpress.init({
-        botId: "a8d1a40a-7d1a-4bfe-9881-b840aadf5e4b",
-        clientId: "b5f99bd5-f2d7-44c9-a99e-85aae72f3628",
-        selector: "#webchat"
-      });
-
-      window.botpress.on("webchat:ready", () => {
-        window.botpress.sendEvent({
-          type: "visit",
-          channel: "web"
-        });
-        window.botpress.open();
-      });
-    </script>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px '.SF NS'; color: #0e0e0e}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="de"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;RecruitingBot&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.botpress.cloud/webchat/v2.3/inject.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>html, body {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>#webchat {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100vw;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.bpFab {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: none !important;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="webchat"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.botpress.init({</p>
+<p class="p1"><span class="Apple-converted-space">        </span>botId: "a8d1a40a-7d1a-4bfe-9881-b840aadf5e4b",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>clientId: "b5f99bd5-f2d7-44c9-a99e-85aae72f3628",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>selector: "#webchat"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>window.botpress.on("webchat:ready", () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.botpress.sendEvent({</p>
+<p class="p1"><span class="Apple-converted-space">          </span>type: "visit",</p>
+<p class="p1"><span class="Apple-converted-space">          </span>channel: "web"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.botpress.open();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
 </html>
